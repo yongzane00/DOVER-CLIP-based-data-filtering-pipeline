@@ -76,13 +76,13 @@ def evaluate_videos(args: tuple):
 
     for i, data in enumerate(tqdm(dataloader, desc="Testing")):
 
-        error_id = 0
+        error_id = int(0)
         current_fname = Path(data["name"][0]).stem
         # print(current_fname + "\n")
 
         if len(data.keys()) == 1: # Exception should return 1 item only
-            error_id += 1
-            print('Error #' + str(error_id) + ' of ' + str(i) + ' files in file: ' + str(data["name"][0]))
+            error_id = error_id + 1
+            print('Error #' + str(error_id) + ' of ' + str(i) + ' files in file: ' + current_fname)
 
             # Append the URL and scores as 0
             vid_paths.append(current_fname)
