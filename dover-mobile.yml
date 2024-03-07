@@ -185,7 +185,7 @@ optimizer:
     wd: 0.05
 
 # Modified this too        
-test_load_path: ./DOVER/pretrained_weights/DOVER-Mobile.pth
+test_load_path: ./pretrained_weights/DOVER-Mobile.pth
 
     
         

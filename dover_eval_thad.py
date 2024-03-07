@@ -89,7 +89,7 @@ def evaluate_videos(args: tuple):
             aesthetic_scores.append(0)
             technical_scores.append(0)
             overall_scores.append(0)      
-                         
+
             continue
 
         video = {}
@@ -114,7 +114,7 @@ def evaluate_videos(args: tuple):
 
         rescaled_results = fuse_results(results)
         
-        with open("./DOVER/zero_shot_res_sensehdr.txt","a") as wf:
+        with open("./zero_shot_res_sensehdr.txt","a") as wf:
             wf.write(f'{current_fname},{rescaled_results["aesthetic"]*100:4f}, {rescaled_results["technical"]*100:4f},{rescaled_results["overall"]*100:4f}\n')
 
         with open(args.output_result_csv, "a") as w:
