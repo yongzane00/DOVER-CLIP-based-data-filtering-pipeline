@@ -20,3 +20,6 @@ Our pipeline is based on the aforementioned .json file provided to us from Tikto
 
 Our pipeline is influenced by our (lack of) expertise, time and processing power constraints, and relative inexperience in this domain. Python-based Jupyter Notebook/Google Collab notebooks were used to standardize development and allow for relative ease of debugging. Open-source and pre-trained models are used in both the text-image alignment and video quality assessments, as our lack of specialized hardware and time makes training a new model infeasible. As the pipeline could only be tested on our local hardware/Google Collab, we chose to specifically use relatively light-weight models to minimize inference time.
 
+## Explanatory YouTube URL
+
+https://youtu.be/iRGKJqZFatM
